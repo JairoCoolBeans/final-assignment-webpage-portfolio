@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Welcome to my portfolio website</h1>
+  <button id="darkModeBtn">Dark/Light Mode</button>
+</header>
+
+<main>
+
+  <!-- LEFT SIDE (About + Image) -->
+  <section class="about-section">
+    <h2>Jairo Mata</h2>
+
+    <div class="about-container">
+
+      <!--  Headshot Image -->
+      <div class="headshot">
+        <img src="https://ik.imagekit.io/JairoCoolBeans/windows%2095%20Jairo.exe%20popup.jpg" alt="">
+      </div>
+
+      <div class="about-text">
+        <p>Hello everyone! my name is Jairo Mata, and this is my art porfolio! and I like the color blue, drawing, playing video games, designing custom cassette tape J cards, And arts & crafts.
+
+  I'm quite fond of the video game character Sonic The Hedgehog, I like owls, hedgehog's, mice, frogs, lizards, and especially catching lizards when I see one, that is all for now, thanks for reading!</p>
+        <p>(Enough space for at least 3 paragraphs)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIGHT SIDE (Portfolio) -->
+  <section class="portfolio-section">
+    <h2>Projects / Portfolio</h2>
+
+    <div class="projects">
+
+      <!--  Project 1 -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/JairoCoolBeans/HOODINIIIIIIIIIII.png" alt="Project 1">
+      </div>
+
+      <!--  Project 2 -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/JairoCoolBeans/sonic%20cassette.jpeg" alt="Project 2">
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <img src="https://ik.imagekit.io/JairoCoolBeans/sonic%20painting.jpeg" alt="Project 3">
+      </div>
+
+    </div>
+
+   
+
+  <!-- BUTTON -->
+  <div class="cta">
+    <button class="learn-btn">Learn More</button>
+  </div>
+
+</main>
+
+<footer>
+   <h1>Contact Me</h1>
+ 
+ 
+  <form action="/submit" method="post">
+    <!-- Name Field -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+ 
+ 
+    <!-- Email Field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+ 
+ 
+    <!-- Message Field -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="Type your message here"></textarea><br><br>
+ 
+ 
+    <!-- Dropdown Menu -->
+    <label for="topic">Topic:</label><br>
+    <select id="topic" name="topic">
+      <option value="general">General Question</option>
+      <option value="feedback">Feedback</option>
+      <option value="support">Support</option>
+    </select><br><br>
+ 
+ 
+    <!-- Submit Button -->
+    <button type="submit">Send</button>
+  </form>
+ 
+ 
+</body>
+</html>
+ 
+<script src="script.js"></script>
+</body>
+</html>
