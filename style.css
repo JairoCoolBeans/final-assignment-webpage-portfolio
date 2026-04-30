@@ -32,14 +32,6 @@ main {
 }
 
 
- .headshot {
-  width: 220px;  
-  border: 0px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* PORTFOLIO */
 .projects {
   display: flex;
@@ -92,11 +84,6 @@ button:active {
   font-family: 'Pixelify Sans', sans-serif;
 }
 
-/* FOOTER */
-footer {
-  margin-top: 20px;
-  padding: 5px;
-}
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -116,9 +103,15 @@ footer {
 }
 
 
+.headshot {
+  width: 280px;
+}
+
 .headshot img {
   width: 100%;
-  height: auto;   
+  height: auto;
+  border-radius: 0;
+  border: 2px solid #c0c0c0;
 }
 
 .card img {
@@ -138,4 +131,72 @@ footer {
 footer p {
   margin: 0;
   font-size: 12px;
+}
+
+.window {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: white gray gray white;
+  margin-bottom: 20px;
+}
+
+.title-bar {
+  background: navy;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.window-content {
+  background: #e0e0e0;
+  padding: 15px;
+}
+
+.cta {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.start-btn {
+  font-family: 'Pixelify Sans', sans-serif;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: white gray gray white;
+  padding: 2px 10px;
+}
+
+.contact-window {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  width: 200px;
+
+  <div class="contact-window window" id="contactWindow">
+  <div class="title-bar" id="dragBar">Contact</div>
+
+  <div class="window-content">
+    <!-- your form stays the same -->
+  </div>
+</div>
+}
+
+.contact-window {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 220px;
+}
+
+.start-menu {
+  position: fixed;
+  bottom: 40px;
+  left: 5px;
+
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: white gray gray white;
+
+  padding: 10px;
+  display: none;
 }
