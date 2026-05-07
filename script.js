@@ -23,3 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
+const overlay = document.getElementById("overlay");
+
+bookCard.addEventListener("click", () => {
+  bookWindow.style.display = "block";
+  overlay.style.display = "block";
+});
+
+closeBook.addEventListener("click", () => {
+  bookWindow.style.display = "none";
+  overlay.style.display = "none";
+});
