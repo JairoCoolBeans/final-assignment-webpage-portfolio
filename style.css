@@ -237,6 +237,7 @@ footer p {
   display: none;
 
   position: fixed;
+
   top: 50%;
   left: 50%;
 
@@ -244,6 +245,10 @@ footer p {
 
   width: 700px;
   max-width: 90%;
+
+  max-height: 80vh;
+
+  overflow-y: auto;
 
   background: #c0c0c0;
 
@@ -253,25 +258,35 @@ footer p {
   z-index: 9999;
 }
 
-/* gallery inside popup */
+
+.book-gallery img {
+  width: 100%;
+  max-height: 180px;
+
+  object-fit: cover;
+
+  border: 2px solid gray;
+}
 
 .book-gallery {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   gap: 10px;
 }
 
-.book-gallery img {
-  width: 100%;
-  border: 2px solid gray;
+.popup::before {
+  content: "";
 }
 
-/* close button */
+#overlay {
+  display: none;
 
-#closeBook {
-  float: right;
-  cursor: pointer;
-  padding: 0 6px;
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.5);
+
+  z-index: 9998;
 }
