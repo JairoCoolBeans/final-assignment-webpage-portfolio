@@ -12,6 +12,10 @@ header {
   padding: 20px;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 /* MAIN LAYOUT */
 main {
   display: grid;
@@ -31,18 +35,22 @@ main {
   align-items: flex-start;
 }
 
+.icon p {
+  color: white;
+}
 
 /* PORTFOLIO */
 .projects {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  gap: 30px;
+   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
 
 .card {
   width: 150px;
   height: 150px;
-  border: 5px solid gray;
+  border: 2px solid gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,4 +207,45 @@ footer p {
 
   padding: 10px;
   display: none;
+}
+
+.desktop-icons {
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+
+  /* Alligning */
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.dark .window {
+  background: #c0c0c0;
+  color: black;
+}
+
+.popup {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 400px;
+
+  display: none; /* hidden at first */
+  z-index: 1000;
+}
+
+.book-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.book-gallery img {
+  width: 100%;
+  border: 2px solid #c0c0c0;
 }
