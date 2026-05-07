@@ -7,8 +7,9 @@ body {
 
 /* HEADER */
 header {
-  display: flex;
+   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -42,9 +43,10 @@ main {
 /* PORTFOLIO */
 .projects {
   display: grid;
-  gap: 30px;
-   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  gap: 30px; 
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  
 }
 
 .card {
@@ -229,23 +231,47 @@ footer p {
   color: black;
 }
 
-.popup {
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  width: 400px;
+/* BOOK POPUP WINDOW */
 
-  display: none; /* hidden at first */
-  z-index: 1000;
+.popup {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 700px;
+  max-width: 90%;
+
+  background: #c0c0c0;
+
+  border: 3px solid;
+  border-color: white gray gray white;
+
+  z-index: 9999;
 }
+
+/* gallery inside popup */
 
 .book-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns: repeat(3, 1fr);
+
   gap: 10px;
 }
 
 .book-gallery img {
   width: 100%;
-  border: 2px solid #c0c0c0;
+  border: 2px solid gray;
+}
+
+/* close button */
+
+#closeBook {
+  float: right;
+  cursor: pointer;
+  padding: 0 6px;
 }
