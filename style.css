@@ -150,6 +150,10 @@ footer p {
   margin-bottom: 20px;
 }
 
+.portfolio-section {
+  align-self: start;
+}
+
 .title-bar {
   background: navy;
   color: white;
@@ -176,20 +180,6 @@ footer p {
   padding: 2px 10px;
 }
 
-.contact-window {
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  width: 200px;
-
-  <div class="contact-window window" id="contactWindow">
-  <div class="title-bar" id="dragBar">Contact</div>
-
-  <div class="window-content">
-    <!-- your form stays the same -->
-  </div>
-</div>
-}
 
 .contact-window {
   position: fixed;
@@ -212,6 +202,7 @@ footer p {
 }
 
 .desktop-icons {
+  align-items: flex-start;
   display: flex;
   gap: 40px;
   margin-top: 15px;
@@ -219,6 +210,19 @@ footer p {
   /* Alligning */
   justify-content: flex-start;
   padding-left: 40px;
+}
+
+
+.icon {
+  width: 90px;
+  text-align: center;
+}
+
+.icon img {
+  width: 64px;
+  height: 64px;
+
+  object-fit: contain;
 }
 
 .icon:hover {
