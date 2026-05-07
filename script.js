@@ -5,21 +5,21 @@ document.getElementById("darkModeBtn").onclick = function () {
 const startBtn = document.getElementById("startBtn");
 const menu = document.getElementById("startMenu");
 
-startBtn.onclick = () => {
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
-};
 
 
-const bookCard = document.getElementById("bookProject");
-const bookWindow = document.getElementById("bookWindow");
-const closeBook = document.getElementById("closeBook");
+document.addEventListener("DOMContentLoaded", () => {
 
-// open window
-bookCard.addEventListener("click", () => {
-  bookWindow.style.display = "block";
-});
+  // BOOK POPUP
+  const bookCard = document.getElementById("bookProject");
+  const bookWindow = document.getElementById("bookWindow");
+  const closeBook = document.getElementById("closeBook");
 
-// close window
-closeBook.addEventListener("click", () => {
-  bookWindow.style.display = "none";
+  bookCard.addEventListener("click", () => {
+    bookWindow.style.display = "block";
+  });
+
+  closeBook.addEventListener("click", () => {
+    bookWindow.style.display = "none";
+  });
+
 });
